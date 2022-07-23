@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #D3DAE3;
+}
+
+/* Destaque inicio */
+.container_inicio{
+    display: inline-block;
+    position: relative;
+}
+.imagem_destaque{
+    width: 100%;
+}
+.textos_inicio{
+    position: absolute;
+    top: 12.4vw;
+    left: 14.641vw;
+}
+.texto_titulo_inicio{
+    font-size: 4.4vw;
+    color: white;
+    width: 30vw;
+}
+.texto_paragrafo_inicio{
+    font-size: 1.2vw;
+    color: white;
+    width: 30vw;
+    margin-top: 1.8vw;
+    margin-bottom: 1.8vw;
+}
+.botao_inicio{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 0.73vw;
+    color: white;
+    padding: 0.73vw 1.46vw;
+    cursor: pointer;
+    font-size: 1.46vw;
+}
+
+/* Cards inicio*/
+.container_cards_inicio{
+    display: flex;
+    flex-direction: row;
+    margin-left: 21.962vw;
+    position: absolute;
+    top: 40vw;
+    width: 59.297vw;
+}
+.card_inicio{
+    background-color: white;
+    width: 19.766vw;
+    height: 14.641vw;
+}
+.card_inicio_central{
+    margin: 0 1.098vw;
+}
+
+/* Quem somos */
+.container_quem_somos{
+    display: flex;
+    flex-direction: row;
+    margin-top: 17.130vw;
+    margin-left: 14.641vw;
+}
+.texto_titulo_quem_somos{
+    font-size: 2.928vw;
+    color: #1F1F1F;
+}
+.texto_paragrafo_quem_somos{
+    font-size: 1.2vw;
+    color: #1F1F1F;
+    width: 42.460vw;
+    margin-top: 1.8vw;
+    margin-bottom: 1.8vw;
+    margin-right: 1.464vw;
+}
+.botao_quem_somos{
+    background-color: white;
+    border: none;
+    border-radius: 0.73vw;
+    color: #1F1F1F;
+    padding: 0.73vw 1.46vw;
+    cursor: pointer;
+    font-size: 1.46vw;
+    margin-bottom: 10vw;
+}
+.imagem_quem_somos{
+    width: 26.354vw;
+    height: auto;
+    margin-bottom: 7.321vw;
+    border-radius: 5px;
+}
+/* Depoimentos */
+.container_depoimentos{
+    display: flex;
+    flex-direction: row;
+    padding-top: 9.883vw;
+    padding-bottom: 9.883vw;
+    background-color: #1F1F1F;
+}
+.div_depoimentos{
+    background-color: #D3DAE3;
+    width: 35.139vw;
+    margin-right: 15vw;
+    margin-left: 14.641vw; 
+}
+.texto_titulo_depoimentos{
+    font-size: 2.928vw;
+    color: #FFFF;
+    width: 23.792vw;
+}
+.texto_paragrafo_depoimentos{
+    font-size: 1.2vw;
+    color: #FFFF;
+    width: 23.792vw;
+    margin-top: 1.8vw;
+    margin-bottom: 1.8vw;
+}
+/* Áreas de atuação */
+.container_atuacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+    margin-left: 14.641vw;   
+}
+.texto_titulo_atuacao{
+    font-size: 2.928vw;
+    color: #1F1F1F;
+    width: 23.792vw;
+}
+.texto_paragrafo_atuacao{
+    font-size: 1.2vw;
+    color: #1F1F1F;
+    width: 23.792vw;
+    margin-top: 1.8vw;
+    margin-bottom: 1.8vw;
+    margin-right: 11vw;
+}
+.cards_atuacao_linha{
+    display: flex;
+    flex-direction: row;
+}
+.card_atuacao{
+    background-color: white;
+    border-radius: 10px;
+    width: 19.766vw;
+    height: 14.641vw;
+    margin-right: 1.75vw;
+    margin-bottom: 1.75vw;
+}
