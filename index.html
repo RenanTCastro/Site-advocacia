@@ -11,21 +11,27 @@
 </head>
 <body>
     <div class="header">
-        <a href="#default" class="logo">CompanyLogo</a>
-        <div class="header-right">
-          <a class="active" href="#home">Home</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
+        <a href="#default" class="logo">
+            <img src="assets/logo.png" alt="logo" class="logo_img">
+        </a>
+        <div>
+          <a href="#home" class="a_header">Home</a>
+          <a href="#sobre" class="a_header">Sobre</a>
+          <a href="#depoimentos" class="a_header">Depoimentos</a>
+          <a href="#area" class="a_header header-right">Áreas de atuação</a>
+          <button class="contato_header" onclick='location.href="#contato"'>
+            <a href="#contato" class="contato_texto_header">CONTATO</a>
+          </button>
         </div>
       </div>
-    <div class="container_inicio">
+    <div class="container_inicio" id="home">
         <img src="assets/img_destaque.png" alt="Senhora justiça jurídico lei" class="imagem_destaque"/>
         <div class="textos_inicio">
             <h1 class='texto_titulo_inicio'> Lorem ipsum dolor sit amet </h1>
             <p class='texto_paragrafo_inicio'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             </p>
-            <button class="botao_inicio">ENTRE EM CONTATO</button>
+            <button class="botao_inicio" onclick='location.href="#contato"'>ENTRE EM CONTATO</button>
         </div>
         <div class="container_cards_inicio">
             <div class="card_inicio">
@@ -41,8 +47,9 @@
                 <p> Lorem ipsum dolor sit amet </p>
             </div>
         </div>
+        <div id="sobre"></div>
     </div>
-    <div class="container_quem_somos">
+    <div class="container_quem_somos"> 
         <div class="textos_quem_somos">
             <h2 class="texto_titulo_quem_somos">Quem somos?</h2>
             <p class="texto_paragrafo_quem_somos">Lorem ipsum dolor sit amet, consectetur 
@@ -53,11 +60,11 @@
                 occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
                 id est laborum.
             </p>
-            <button class="botao_quem_somos">ENTRE EM CONTATO</button>
+            <button class="botao_quem_somos" onclick='location.href="#contato"'>ENTRE EM CONTATO</button>
         </div>
         <img src="assets/advogado.jpg" alt="foto" class="imagem_quem_somos"/>
     </div>
-    <div class="container_depoimentos">
+    <div class="container_depoimentos" id="depoimentos">
         <div>
             <div class="div_depoimentos">
                 <p class="texto_paragrafo_depoimentos">Lorem ipsum dolor sit amet, consectetur 
@@ -74,6 +81,7 @@
             </p>
         </div>
     </div>
+    <div id="area"></div>
     <div class="container_atuacao">
         <div>
             <h2 class="texto_titulo_atuacao">Áreas em que atuamos</h2>
@@ -105,7 +113,7 @@
             </div>
         </div>
     </div>
-    <div class="container_contato">
+    <div class="container_contato" id="contato">
         <div>
             <h2 class="texto_titulo_contato">Entre em contato conosco</h2>
             <p class="texto_paragrafo_contato">Lorem ipsum dolor sit amet, consectetur 

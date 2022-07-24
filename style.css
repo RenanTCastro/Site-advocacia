@@ -4,15 +4,21 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+} 
 body{
     background-color: #D3DAE3;
 }
 /* Header */
 .header {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #0D0D0D;
     height: 5.857vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position:fixed;
     width:100%;
     z-index: 1;
@@ -20,31 +26,35 @@ body{
 .logo{
     margin-left: 14.641vw;
 }
-.header a {
+.logo_img{
+    width: 14.641vw;
+}
+.a_header {
     float: left;
-    color: black;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-}
-.header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-}
-.header a:hover {
-    background-color: #ddd;
-    color: black;
-}
-.header a.active {
-    background-color: dodgerblue;
     color: white;
+    text-align: center;
+    padding: 0.878vw;
+    font-size: 1.171vw;
+    text-decoration: none;
 }
-.header-right {
-    float: right;
-    margin-right: 14.641vw;
+.header-right{
+    margin-right: 16.75vw;
+}
+.contato_header{
+    background-color: #FFF;
+    border-radius: 4px;
+    height: 2.928vw;
+    position: absolute;
+    top: 1.464vw;
+    right: 7.321vw;
+    padding: 0 1.464vw;
+    cursor: pointer;
+}
+.contato_texto_header{
+    font-weight: 700;
+    color: #0D0D0D;
+    text-decoration: none;
+    font-size: 1.171vw;
 }
 /* Destaque inicio */
 .container_inicio{
@@ -110,21 +120,20 @@ body{
 }
 .texto_titulo_quem_somos{
     font-size: 2.928vw;
-    color: #1F1F1F;
+    color: #0D0D0D;
 }
 .texto_paragrafo_quem_somos{
     font-size: 1.2vw;
-    color: #1F1F1F;
+    color: #0D0D0D;
     width: 42.460vw;
     margin-top: 1.8vw;
     margin-bottom: 1.8vw;
     margin-right: 1.464vw;
 }
 .botao_quem_somos{
-    background-color: white;
-    border: none;
+    background: linear-gradient(99.03deg, #0D0D0D 27.08%, rgba(13, 13, 13, 0.83) 96.74%);    border: none;
     border-radius: 0.73vw;
-    color: #1F1F1F;
+    color:#FFFF;
     padding: 0.73vw 1.46vw;
     cursor: pointer;
     font-size: 1.46vw;
@@ -142,7 +151,7 @@ body{
     flex-direction: row;
     padding-top: 14.641vw;
     padding-bottom: 14.641vw;
-    background-color: #1F1F1F;
+    background: linear-gradient(99.03deg, #0D0D0D 27.08%, rgba(13, 13, 13, 0.83) 96.74%);
 }
 .div_depoimentos{
     background-color: #D3DAE3;
@@ -174,13 +183,13 @@ body{
 }
 .texto_titulo_atuacao{
     font-size: 2.928vw;
-    color: #1F1F1F;
+    color: #0D0D0D;
     width: 23.792vw;
     line-height: 95%;
 }
 .texto_paragrafo_atuacao{
     font-size: 1.2vw;
-    color: #1F1F1F;
+    color: #0D0D0D;
     width: 23.792vw;
     margin-top: 1.8vw;
     margin-bottom: 1.8vw;
@@ -205,8 +214,7 @@ body{
     align-items: center;
     padding-top: 14.641vw;
     padding-bottom: 14.641vw;
-    background-color: #1F1F1F;
-}
+    background: linear-gradient(99.03deg, #0D0D0D 27.08%, rgba(13, 13, 13, 0.83) 96.74%);}
 .texto_titulo_contato{
     font-size: 2.928vw;
     color: #FFFF;
@@ -248,7 +256,7 @@ body{
 .botao_contato{
     background-color: white;
     border: none;
-    color: #1F1F1F;
+    color: #0D0D0D;
     padding: 0.73vw 1.46vw;
     cursor: pointer;
     font-size: 1.46vw;
@@ -264,7 +272,7 @@ body{
 }
 .texto_titulo_maps{
     font-size: 2.928vw;
-    color: #FFFF;
+    color: #0D0D0D;
     width: 26vw;
     margin-bottom: 3.660vw;
     line-height: 95%;
