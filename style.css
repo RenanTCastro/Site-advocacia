@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 *{
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -16,13 +19,14 @@ body{
 }
 .textos_inicio{
     position: absolute;
-    top: 12.4vw;
+    top: 10vw;
     left: 14.641vw;
 }
 .texto_titulo_inicio{
     font-size: 4.4vw;
     color: white;
-    width: 30vw;
+    width: 31.479vw;
+    line-height: 95%;
 }
 .texto_paragrafo_inicio{
     font-size: 1.2vw;
@@ -98,8 +102,8 @@ body{
 .container_depoimentos{
     display: flex;
     flex-direction: row;
-    padding-top: 9.883vw;
-    padding-bottom: 9.883vw;
+    padding-top: 14.641vw;
+    padding-bottom: 14.641vw;
     background-color: #1F1F1F;
 }
 .div_depoimentos{
@@ -112,6 +116,7 @@ body{
     font-size: 2.928vw;
     color: #FFFF;
     width: 23.792vw;
+    line-height: 95%;
 }
 .texto_paragrafo_depoimentos{
     font-size: 1.2vw;
@@ -133,6 +138,7 @@ body{
     font-size: 2.928vw;
     color: #1F1F1F;
     width: 23.792vw;
+    line-height: 95%;
 }
 .texto_paragrafo_atuacao{
     font-size: 1.2vw;
@@ -153,4 +159,80 @@ body{
     height: 14.641vw;
     margin-right: 1.75vw;
     margin-bottom: 1.75vw;
+}
+/* Contato */
+.container_contato{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 14.641vw;
+    padding-bottom: 14.641vw;
+    background-color: #1F1F1F;
+}
+.texto_titulo_contato{
+    font-size: 2.928vw;
+    color: #FFFF;
+    width: 26vw;
+    line-height: 95%;
+    margin-left: 14.641vw;   
+}
+.texto_paragrafo_contato{
+    font-size: 1.2vw;
+    color: #FFFF;
+    width: 23.426vw;
+    margin-top: 1.8vw;
+    margin-right: 11vw;
+    margin-left: 14.641vw;   
+
+}
+.inputs_contato{
+    display: flex;
+    flex-direction: column;
+}
+.input_contato{
+    width: 38.433vw;
+    height: 3.294vw;
+    margin-bottom: 1.098vw;
+    padding-left: 0.732vw;
+    outline: none;
+    border: none;
+}
+.textarea_contato{
+    width: 38.433vw;
+    height: 9.883vw;
+    resize: none;
+    padding-left: 0.732vw;
+    padding-top: 0.732vw;
+    outline: none;
+    border: none;
+    margin-bottom: 1.098vw;
+}
+.botao_contato{
+    background-color: white;
+    border: none;
+    color: #1F1F1F;
+    padding: 0.73vw 1.46vw;
+    cursor: pointer;
+    font-size: 1.46vw;
+}
+/* Mapas */
+.container_maps{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7.321vw;
+    margin-bottom: 7.321vw;
+}
+.texto_titulo_maps{
+    font-size: 2.928vw;
+    color: #FFFF;
+    width: 26vw;
+    margin-bottom: 3.660vw;
+    line-height: 95%;
+    text-align: center;
+}
+.google_maps{
+    width: 43.924vw;
+    height: 29.283vw;
 }
