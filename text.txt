@@ -1,0 +1,8 @@
+Slider depoimentos
+Footer
+Mais espaço no quem somos
+Foto do quem somos
+Header hover nos textos
+Header algo para sinalizar onde estamos
+Responsividade
+Enviar email

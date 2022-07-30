@@ -36,15 +36,15 @@
         <div class="container_cards_inicio">
             <div class="card_inicio">
                 <img src="assets/icon.png" alt="Senhora justiça jurídico lei" class="card__inicio_icon"/>
-                <p> Lorem ipsum dolor sit amet </p>
+                <p class="card_inicio_texto"> Lorem ipsum dolor sit amet </p>
             </div>
             <div class="card_inicio card_inicio_central">
                 <img src="assets/icon.png" alt="Senhora justiça jurídico lei" class="card__inicio_icon"/>
-                <p> Lorem ipsum dolor sit amet </p>
+                <p class="card_inicio_texto"> Lorem ipsum dolor sit amet </p>
             </div>
             <div class="card_inicio">
                 <img src="assets/icon.png" alt="Senhora justiça jurídico lei" class="card__inicio_icon"/>
-                <p> Lorem ipsum dolor sit amet </p>
+                <p class="card_inicio_texto"> Lorem ipsum dolor sit amet </p>
             </div>
         </div>
         <div id="sobre"></div>
@@ -67,11 +67,48 @@
     <div class="container_depoimentos" id="depoimentos">
         <div>
             <div class="div_depoimentos">
-                <p class="texto_paragrafo_depoimentos">Lorem ipsum dolor sit amet, consectetur 
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. 
-                </p>
+                <div class="slider">
+                    <div class="texto_paragrafo_depoimentos_slide fade">
+                        <p>
+                            1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="texto_paragrafo_depoimentos_slide fade">
+                        <p>
+                            2Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="texto_paragrafo_depoimentos_slide fade">
+                        <p>
+                            3Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
             </div>
+            <div>
+                <div class="slider_autor fade">
+                    <h3>João Castro</h3>
+                </div>
+                <div class="slider_autor fade">
+                    <h3>Luiz Marcelo</h3>
+                </div>
+                <div class="slider_autor fade">
+                    <h3>Helena Lopes</h3>
+                </div>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+              
         </div>
         <div>
             <h2 class="texto_titulo_depoimentos">O que estão falando de nós?</h2>
@@ -93,22 +130,22 @@
         <div class="container_cards_atuacao">
             <div class="cards_atuacao_linha">
                 <div class="card_atuacao">
-                    <h3> Lorem ih3sum dolor sit amet </h3>
-                    <p> Lorem ipsum dolor sit amet </p>
+                    <h3 class="card_atuacao_titulo"> Lorem dolor sit amet </h3>
+                    <p class="card_atuacao_paragrafo"> Lorem ipsum dolor sit amet </p>
                 </div>
                 <div class="card_atuacao">
-                    <h3> Lorem ih3sum dolor sit amet </h3>
-                    <p> Lorem ipsum dolor sit amet </p>
+                    <h3 class="card_atuacao_titulo"> Lorem dolor sit amet </h3>
+                    <p class="card_atuacao_paragrafo"> Lorem ipsum dolor sit amet </p>
                 </div>
             </div>
             <div class="cards_atuacao_linha">
                 <div class="card_atuacao">
-                    <h3> Lorem ih3sum dolor sit amet </h3>
-                    <p> Lorem ipsum dolor sit amet </p>
+                    <h3 class="card_atuacao_titulo"> Lorem dolor sit amet </h3>
+                    <p class="card_atuacao_paragrafo"> Lorem ipsum dolor sit amet </p>
                 </div>
                 <div class="card_atuacao">
-                    <h3> Lorem ih3sum dolor sit amet </h3>
-                    <p> Lorem ipsum dolor sit amet </p>
+                    <h3 class="card_atuacao_titulo"> Lorem dolor sit amet </h3>
+                    <p class="card_atuacao_paragrafo"> Lorem ipsum dolor sit amet </p>
                 </div>
             </div>
         </div>
@@ -135,8 +172,22 @@
             class="google_maps"  loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </div>
+    <div class="footer">
+        <img src="assets/logo.png" alt="logo" class="logo_footer">
+        <div class="div_localizacao_footer">
+            <h2 class="h2_footer">Localização</h2>    
+            <p  class="p_footer">Avenida Presidente Médici, 15 - Bairro Caraíbas, Paramirim-BA</p>        
+        </div>
+        <div class="div_contatos_footer">
+            <h2 class="h2_footer">Contatos</h2>
+            <p  class="p_footer">(77) 9 9969-3199</p>
+            <p  class="p_footer">(77) 9 9329-2847</p>
+            <p  class="p_footer">camargos@email.com</p>
+        </div>
+    </div>
+    <div class="abaixo_footer">Todos direitos reservados. Desenvolvido por &nbsp;<a href="http://google.com/" class="abaixo_footer_link" target="_blank"> Renan Castro</a></div>
+    </div>
     <script src="script.js"></script>
-
     <a href="https://wa.me/5577999693199?text=Adorei%20seu%20site" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
     z-index:1000;" target="_blank">
         <i style="margin-top:16px" class="fa fa-whatsapp"></i>
