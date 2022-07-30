@@ -391,8 +391,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px; 
-    font-size: 12px;
+    height: 2.928vw; 
+    font-size: 0.878vw;
     color: #FFF;
     font-weight: bold;
 }
