@@ -66,6 +66,9 @@ body{
     width: 100vw;
     max-width:100%;
 }
+.imagem_destaque_mobile{
+    display: none;
+}
 .textos_inicio{
     position: absolute;
     top: 10vw;
@@ -93,7 +96,44 @@ body{
     cursor: pointer;
     font-size: 1.46vw;
 }
-
+@media only screen and (max-width: 460px) {
+    .container_inicio{
+        margin-top: 5vw;
+    }
+    .imagem_destaque{
+        display: none;
+    }
+    .imagem_destaque_mobile{
+        display: flex;
+        width: 100vw;
+        max-width:100%;
+    }
+    .textos_inicio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 30vh;
+        left: 10vw;
+    }
+    .texto_titulo_inicio{
+        font-size: 8.969vw;
+        width: 80vw;
+        text-align: center;
+    }
+    .texto_paragrafo_inicio{
+        font-size: 4.484vw;
+        width: 80vw;
+        text-align: center;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+    .botao_inicio{
+        width: 60vw;
+        height: 12vw;
+        font-size: 4.484vw;
+        font-weight: bold;
+    }
+}
 /* Cards inicio*/
 .container_cards_inicio{
     display: flex;
@@ -125,6 +165,32 @@ body{
     font-size: 1.464vw;
     text-align: center;
     color: #FFF;
+}
+@media only screen and (max-width: 460px) {
+    .container_cards_inicio{
+        flex-direction: column;
+        top: 80vh;
+        margin-left: 10vw;
+    }
+    .card_inicio{
+        width: 80vw;
+        height: 60vw;
+        margin-bottom: 11.211vw;
+    }
+    .card_inicio_central{
+        margin: 0;
+        margin-bottom: 11.211vw;
+    }
+    .card__inicio_icon{
+        width: 11.211vw;
+        height: 11.211vw;
+        margin-top: 7.848vw;
+        margin-bottom: 4.484vw;
+    }
+    .card_inicio_texto{
+        font-size: 6.278vw;
+        width: 70%;
+    }
 }
 /* Quem somos */
 .container_quem_somos{
@@ -159,6 +225,47 @@ body{
     height: 26.354vw;
     margin-bottom: 14.641vw;
     border-radius: 5px;
+}
+@media only screen and (max-width: 460px) {
+    .container_quem_somos{
+        margin-top: 200vw;
+        margin-left: 0;
+        background: linear-gradient(157.16deg, #000000 0%, rgba(0, 0, 0, 0.85) 99.18%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto_titulo_quem_somos{
+        text-align: center;
+        font-size: 8.969vw;
+        color: #FFF;
+    }
+    .texto_paragrafo_quem_somos{
+        width: 80vw;
+        text-align: center;
+        font-size: 4.484vw;
+        color: #FFF;
+        margin-top: 5.605vw;
+        margin-bottom: 13.453vw;
+    }
+    .container_quem_somos > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15.695vw;
+    }
+    .botao_quem_somos{
+        width: 60vw;
+        height: 12vw;
+        font-size: 4.484vw;
+        color: #0D0D0D;
+        margin-bottom: 15.695vw;
+        background: #FFF;
+        font-weight: bold;
+    }
+    .imagem_quem_somos{
+        display: none;
+    }
 }
 /* Depoimentos */
 .container_depoimentos{
@@ -230,6 +337,51 @@ body{
     height: 0.878vw;
     width: 0.878vw;
 }
+@media only screen and (max-width: 460px) {
+    .container_depoimentos{
+        background: #D3DAE3;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .div_texto_depoimentos{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .div_depoimentos{
+        width: 45vw;
+        border-radius: 5px;
+        padding: 5.605vw;
+        background-color: #000000;
+    }
+    .slider{
+        height:100%;
+    }
+    .texto_paragrafo_depoimentos_slide{
+        font-size: 3.587vw;
+        color:#FFF;
+        background-color: #000000;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .slider_autor_mobile{
+        font-size: 4.036vw;
+        font-weight: 600;
+        margin-bottom: 2.691vw;
+    }
+    .texto_titulo_depoimentos{
+        width: 80%;
+        text-align: center;
+        font-size: 8.969vw;
+        color: #000000;
+        margin-bottom: 13.453vw;
+    }
+    .texto_paragrafo_depoimentos, .dot, .slider_autor{
+        display: none;
+    }
+}
 /* Áreas de atuação */
 .container_atuacao{
     display: flex;
@@ -298,6 +450,9 @@ body{
     line-height: 95%;
     margin-left: 14.641vw;   
 }
+.texto_titulo_contato_mobile{
+    display: none;
+}
 .texto_paragrafo_contato{
     font-size: 1.2vw;
     color: #FFFF;
@@ -336,6 +491,43 @@ body{
     padding: 0.73vw 1.46vw;
     cursor: pointer;
     font-size: 1.46vw;
+}
+@media only screen and (max-width: 460px) {
+    .container_contato{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .texto_titulo_contato{
+        display: none;
+    }
+    .texto_titulo_contato_mobile{
+        display: flex;
+        width: 60vw;
+        text-align: center;
+        font-size: 8.969vw;
+        color: #FFF;
+        line-height: 95%;
+        margin-bottom: 13.453vw;
+    }
+    .texto_paragrafo_contato{
+        display: none;
+    }
+    .input_contato{
+        width: 80vw;
+        height: 10.090vw;
+        margin-bottom: 3.363vw;
+    }
+    .textarea_contato{
+        width: 80vw;
+        height: 30.269vw;
+        margin-bottom: 3.363vw;
+    }
+    .botao_contato{
+        height: 13.453vw;
+        font-size: 4.484vw;
+        font-weight: bold;
+    }
 }
 /* Mapas */
 .container_maps{

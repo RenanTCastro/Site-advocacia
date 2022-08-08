@@ -10,6 +10,7 @@ function nextSlide(){
   const n = slideIndex;
   showSlides(slideIndex = n+1);
 }
+
 function showSlides(n) {
   let i;
   console.log(slideIndex)
