@@ -27,7 +27,8 @@ body{
     margin-left: 14.641vw;
 }
 .logo_img{
-    width: 14.641vw;
+    width: 8.234vw;
+    margin-top: 0.374vw;
 }
 .a_header {
     float: left;
@@ -55,6 +56,73 @@ body{
     color: #0D0D0D;
     text-decoration: none;
     font-size: 1.171vw;
+}
+.icon_header{
+    display: none;
+}
+@media only screen and (max-width: 490px) {
+   .header{
+        height: 13.453vw;
+   } 
+   .header_open{
+        overflow: hidden;
+        background-color: #0D0D0D;
+        padding-top: 4.167vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position:fixed;
+        width:100%;
+        z-index: 1;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+   }
+   .logo_img{
+        width: 15.45vw;
+        position: absolute;
+        top: 2.778vw;
+        left: 11.111vw;
+   }
+   .header-right{
+        margin-right: 0;
+        margin-bottom: 6.944vw;
+   }
+    .contato_header, .a_header{
+        display: none;
+    }
+   .icon_header{
+        display: flex;
+        background: none;
+        border: none;
+        margin-right: 5vw;
+   }
+   .icon_header > img{
+        width: 8.333vw;
+        position: absolute;
+        top: 4.167vw;
+        right: 11.111vw;
+   }
+   .text_header{
+        display: flex;
+        flex-direction: column;
+        margin-top: 11.111vw;
+   }
+   .mobile_closed{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:100%;
+   }
+   .a_header_hide{
+        display: none;
+   }
+   .a_header_mobile{
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 1.464vw;
+        font-size: 4.444vw;
+        text-decoration: none;
+   }
 }
 /* Destaque inicio */
 .container_inicio{
@@ -96,7 +164,7 @@ body{
     cursor: pointer;
     font-size: 1.46vw;
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 490px) {
     .container_inicio{
         margin-top: 5vw;
     }
@@ -166,7 +234,7 @@ body{
     text-align: center;
     color: #FFF;
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 490px) {
     .container_cards_inicio{
         flex-direction: column;
         top: 80vh;
@@ -226,7 +294,7 @@ body{
     margin-bottom: 14.641vw;
     border-radius: 5px;
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 490px) {
     .container_quem_somos{
         margin-top: 200vw;
         margin-left: 0;
@@ -265,6 +333,11 @@ body{
     }
     .imagem_quem_somos{
         display: none;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .container_quem_somos{
+        margin-top: 250vw;
     }
 }
 /* Depoimentos */
@@ -337,7 +410,13 @@ body{
     height: 0.878vw;
     width: 0.878vw;
 }
-@media only screen and (max-width: 460px) {
+.button_arrow{
+    display: none;
+}
+.slider_autor_mobile{
+    display: none;
+}
+@media only screen and (max-width: 490px) {
     .container_depoimentos{
         background: #D3DAE3;
         display: flex;
@@ -353,6 +432,7 @@ body{
         width: 45vw;
         border-radius: 5px;
         padding: 5.605vw;
+        margin: 0 4.484vw;
         background-color: #000000;
     }
     .slider{
@@ -367,6 +447,7 @@ body{
         flex-direction: column;
     }
     .slider_autor_mobile{
+        display: flex;
         font-size: 4.036vw;
         font-weight: 600;
         margin-bottom: 2.691vw;
@@ -378,8 +459,21 @@ body{
         color: #000000;
         margin-bottom: 13.453vw;
     }
-    .texto_paragrafo_depoimentos, .dot, .slider_autor{
+    .div_depoimentos_organizar{
+        display: flex;
+    }
+    .texto_paragrafo_depoimentos, .dot, .div_autor{
         display: none;
+    }
+    .button_arrow{
+        display: flex;
+        align-items: center;
+        background: none;
+        border: none;
+    }
+    .arrow{
+        width: 4.484vw;
+        height: 8.969vw;
     }
 }
 /* Áreas de atuação */
@@ -433,6 +527,30 @@ body{
     font-size: 1.171vw;
     text-align: center;
     color: #FFF;
+}
+.hide{
+    display: none;
+}
+@media only screen and (max-width: 490px) {
+    .container_atuacao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 17.937vw;
+    }
+    .texto_titulo_atuacao{
+        font-size: 8.969vw;
+        text-align: center;
+        width: 80vw;
+        margin-bottom: 15.695vw;
+    }
+    .texto_paragrafo_atuacao, .container_cards_atuacao{
+        display: none;
+    }
+    .hide{
+        display: flex;
+    }
 }
 /* Contato */
 .container_contato{
@@ -492,7 +610,7 @@ body{
     cursor: pointer;
     font-size: 1.46vw;
 }
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 490px) {
     .container_contato{
         display: flex;
         flex-direction: column;
@@ -528,6 +646,10 @@ body{
         font-size: 4.484vw;
         font-weight: bold;
     }
+    .div_mobile_contato_atuacao{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 /* Mapas */
 .container_maps{
@@ -550,6 +672,11 @@ body{
     width: 43.924vw;
     height: 29.283vw;
 }
+@media only screen and (max-width: 490px) {
+    .container_maps{
+        display: none;
+    }
+}
 /* Footer */
 .footer{
     background-color: #0D0D0D;
@@ -558,9 +685,9 @@ body{
     color: #FFF;
 }
 .logo_footer{
-    width: 30%;   
-    height: 30%; 
-    margin-left: 5vw;
+    width: 20%;   
+    height: 20%; 
+    margin: 3.743vw 0 3.743vw 10vw;
 }
 .div_localizacao_footer{
     width: 18vw;
@@ -591,4 +718,48 @@ body{
 .abaixo_footer_link{
     text-decoration: none;
     color: #FFF;
+}
+.google_maps_mobile{
+    display: none;
+}
+@media only screen and (max-width: 490px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo_footer{
+        width: 50%;   
+        height: 50%; 
+        margin: 6.726vw 0;
+    }
+    .div_localizacao_footer{
+        width: 80%;
+    }
+    .div_localizacao_footer, .div_contatos_footer{
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .h2_footer{
+        font-size: 4.484vw;
+        text-align: center;
+    }
+    .p_footer{
+        font-size: 3.587vw;
+        text-align: center;
+    }
+    .p_footer_mobile{
+        margin-bottom: 11.211vw;
+    }
+    .google_maps_mobile{
+        display: flex;
+        width: 73.991vw;
+        height: 42.601vw;
+        margin-bottom: 0.732vw; ;
+    }
+    .abaixo_footer{
+        height: 13.453vw;
+        font-size: 2.691vw;
+    }
 }

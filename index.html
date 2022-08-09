@@ -10,11 +10,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="header">
-        <a href="#default" class="logo">
-            <img src="assets/logo.png" alt="logo" class="logo_img">
-        </a>
-        <div>
+    <div class="header" id="header_d">
+        <div class="mobile_closed">
+            <a href="#default" class="logo">
+                <img src="assets/logo.png" alt="logo" class="logo_img">
+            </a>
+
+            <div>
+                <button class="icon_header" onclick="menu()">
+                    <img src="assets/menu_icon.png" id="img_id" alt="menu icone">
+                </button>
+            </div>
+        </div>
+        <div class="text_header">
+            <a href="#home" class="a_header_hide" id="nav_d_1">Home</a>
+            <a href="#sobre" class="a_header_hide" id="nav_d_2">Sobre</a>
+            <a href="#depoimentos" class="a_header_hide" id="nav_d_3">Depoimentos</a>
+            <a href="#area" class="a_header_hide header-right" id="nav_d_4">Áreas de atuação</a>
+            <button class="contato_header" onclick='location.href="#contato"'>
+              <a href="#contato" class="contato_texto_header">CONTATO</a>
+            </button>
+        </div>
+
+        <div >
           <a href="#home" class="a_header">Home</a>
           <a href="#sobre" class="a_header">Sobre</a>
           <a href="#depoimentos" class="a_header">Depoimentos</a>
@@ -23,7 +41,7 @@
             <a href="#contato" class="contato_texto_header">CONTATO</a>
           </button>
         </div>
-      </div>
+    </div>
     <div class="container_inicio" id="home">
         <img src="assets/img_destaque.png" alt="Senhora justiça jurídico lei" class="imagem_destaque"/>
         <img src="assets/img_destaque_mobile.png" alt="Senhora justiça jurídico lei" class="imagem_destaque_mobile"/>
@@ -67,36 +85,44 @@
     </div>
     <div class="container_depoimentos" id="depoimentos">
         <div>
-            <div class="div_depoimentos">
-                <div class="slider">
-                    <div class="texto_paragrafo_depoimentos_slide fade">
-                        <p class="slider_autor_mobile">Joao Castro</p>
-                        <p>
-                            1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
+            <div class="div_depoimentos_organizar">
+                <button class="button_arrow" onclick="currentSlide(slideIndex-1)">
+                    <img class="arrow" src="assets/arrow_left.png" altt="seta para esquerda">
+                </button>
+                <div class="div_depoimentos">
+                    <div class="slider">
+                        <div class="texto_paragrafo_depoimentos_slide fade">
+                            <p class="slider_autor_mobile">Joao Castro</p>
+                            <p>
+                                1Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="texto_paragrafo_depoimentos_slide fade">
+                            <p class="slider_autor_mobile">Helena Lopes</p>
+                            <p>
+                                2Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="texto_paragrafo_depoimentos_slide fade">
+                            <p class="slider_autor_mobile">Carlos Luz</p>
+                            <p>
+                                3Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="slider">
-                    <div class="texto_paragrafo_depoimentos_slide fade">
-                        <p class="slider_autor_mobile">Joao Castro</p>
-                        <p>
-                            2Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </div>
-                </div>
-                <div class="slider">
-                    <div class="texto_paragrafo_depoimentos_slide fade">
-                        <p class="slider_autor_mobile">Joao Castro</p>
-                        <p>
-                            3Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </div>
-                </div>
+                <button class="button_arrow" onclick="currentSlide(slideIndex+1)">
+                    <img class="arrow" src="assets/arrow.png" alt="seta para direita">
+                </button>
             </div>
-            <div>
+            <div class="div_autor">
                 <div class="slider_autor fade">
                     <h3>João Castro</h3>
                 </div>
@@ -123,52 +149,98 @@
         </div>
     </div>
     <div id="area"></div>
-    <div class="container_atuacao">
-        <div>
-            <h2 class="texto_titulo_atuacao">Áreas em que atuamos</h2>
-            <p class="texto_paragrafo_atuacao">Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                aliqua.
-            </p>
-        </div>
-        <div class="container_cards_atuacao">
-            <div class="cards_atuacao_linha">
-                <div class="card_atuacao">
-                    <h3 class="card_atuacao_titulo"> Lorem dolor sit amet </h3>
-                    <p class="card_atuacao_paragrafo"> Lorem ipsum dolor sit amet </p>
+    <div class="div_mobile_contato_atuacao">
+        <div class="container_atuacao">
+            <div>
+                <h2 class="texto_titulo_atuacao">Áreas em que atuamos</h2>
+                <p class="texto_paragrafo_atuacao">Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua.
+                </p>
+            </div>
+            <div class="div_depoimentos_organizar">
+                <button class="button_arrow" onclick="currentSlideAtuacao(slideIndexAtuacao-1)">
+                    <img class="arrow" src="assets/arrow_left.png" altt="seta para esquerda">
+                </button>
+
+
+                <div class="div_depoimentos hide">
+                    <div class="slider_atuacao">
+                        <div class="texto_paragrafo_depoimentos_slide fade">
+                            <p class="slider_autor_mobile">Lorem dolor sit amet</p>
+                            <p>
+                                1Lorem dolor sit amet
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider_atuacao">
+                        <div class="texto_paragrafo_depoimentos_slide fade">
+                            <p class="slider_autor_mobile">Lorem dolor sit amet</p>
+                            <p>
+                                2Lorem dolor sit amet
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider_atuacao">
+                        <div class="texto_paragrafo_depoimentos_slide fade">
+                            <p class="slider_autor_mobile">Lorem dolor sit amet</p>
+                            <p>
+                                3Lorem dolor sit amet
+                            </p>
+                        </div>
+                    </div>
+                    <div class="slider_atuacao">
+                        <div class="texto_paragrafo_depoimentos_slide fade">
+                            <p class="slider_autor_mobile">Lorem dolor sit amet</p>
+                            <p>
+                                4Lorem dolor sit amet
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card_atuacao">
-                    <h3 class="card_atuacao_titulo"> Lorem dolor sit amet </h3>
-                    <p class="card_atuacao_paragrafo"> Lorem ipsum dolor sit amet </p>
+                <button class="button_arrow" onclick="currentSlideAtuacao(slideIndexAtuacao+1)">
+                    <img class="arrow" src="assets/arrow.png" alt="seta para direita">
+                </button>
+            </div>
+            <div class="container_cards_atuacao">
+                <div class="cards_atuacao_linha">
+                    <div class="card_atuacao">
+                        <h3 class="card_atuacao_titulo"> Lorem dolor sit amet </h3>
+                        <p class="card_atuacao_paragrafo"> Lorem ipsum dolor sit amet </p>
+                    </div>
+                    <div class="card_atuacao">
+                        <h3 class="card_atuacao_titulo"> Lorem dolor sit amet </h3>
+                        <p class="card_atuacao_paragrafo"> Lorem ipsum dolor sit amet </p>
+                    </div>
+                </div>
+                <div class="cards_atuacao_linha">
+                    <div class="card_atuacao">
+                        <h3 class="card_atuacao_titulo"> Lorem dolor sit amet </h3>
+                        <p class="card_atuacao_paragrafo"> Lorem ipsum dolor sit amet </p>
+                    </div>
+                    <div class="card_atuacao">
+                        <h3 class="card_atuacao_titulo"> Lorem dolor sit amet </h3>
+                        <p class="card_atuacao_paragrafo"> Lorem ipsum dolor sit amet </p>
+                    </div>
                 </div>
             </div>
-            <div class="cards_atuacao_linha">
-                <div class="card_atuacao">
-                    <h3 class="card_atuacao_titulo"> Lorem dolor sit amet </h3>
-                    <p class="card_atuacao_paragrafo"> Lorem ipsum dolor sit amet </p>
-                </div>
-                <div class="card_atuacao">
-                    <h3 class="card_atuacao_titulo"> Lorem dolor sit amet </h3>
-                    <p class="card_atuacao_paragrafo"> Lorem ipsum dolor sit amet </p>
-                </div>
+        </div>
+        <div class="container_contato" id="contato">
+            <div>
+                <h2 class="texto_titulo_contato">Entre em contato conosco</h2>
+                <h2 class="texto_titulo_contato_mobile">Entre em contato</h2>
+                <p class="texto_paragrafo_contato">Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                    aliqua.
+                </p>
             </div>
-        </div>
-    </div>
-    <div class="container_contato" id="contato">
-        <div>
-            <h2 class="texto_titulo_contato">Entre em contato conosco</h2>
-            <h2 class="texto_titulo_contato_mobile">Entre em contato</h2>
-            <p class="texto_paragrafo_contato">Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
-                aliqua.
-            </p>
-        </div>
-        <div class="inputs_contato">
-            <input type="text" placeholder="Nome" class="input_contato">
-            <input type="email" placeholder="Email" class="input_contato">
-            <input type="text" placeholder="Whatsapp" class="input_contato">
-            <textarea placeholder="Digite sua mensagem" class="textarea_contato"></textarea>
-            <button class="botao_contato">ENVIAR</button>
+            <div class="inputs_contato">
+                <input type="text" placeholder="Nome" class="input_contato">
+                <input type="email" placeholder="Email" class="input_contato">
+                <input type="text" placeholder="Whatsapp" class="input_contato">
+                <textarea placeholder="Digite sua mensagem" class="textarea_contato"></textarea>
+                <button class="botao_contato">ENVIAR</button>
+            </div>
         </div>
     </div>
     <div class="container_maps">
@@ -179,6 +251,9 @@
     </div>
     <div class="footer">
         <img src="assets/logo.png" alt="logo" class="logo_footer">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.307929386075!2d-43.9649229856789!3d-19.869215241551686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6908ba0d42d5b%3A0x43a5f491fad68b3d!2sUFMG%20School%20of%20Engineering!5e0!3m2!1sen!2sbr!4v1658624076742!5m2!1sen!2sbr" 
+            class="google_maps_mobile"  loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
         <div class="div_localizacao_footer">
             <h2 class="h2_footer">Localização</h2>    
             <p  class="p_footer">Avenida Presidente Médici, 15 - Bairro Caraíbas, Paramirim-BA</p>        
@@ -187,7 +262,7 @@
             <h2 class="h2_footer">Contatos</h2>
             <p  class="p_footer">(77) 9 9969-3199</p>
             <p  class="p_footer">(77) 9 9329-2847</p>
-            <p  class="p_footer">camargos@email.com</p>
+            <p  class="p_footer p_footer_mobile">camargos@email.com</p>
         </div>
     </div>
     <div class="abaixo_footer">Todos direitos reservados. Desenvolvido por &nbsp;<a href="http://google.com/" class="abaixo_footer_link" target="_blank"> Renan Castro</a></div>
