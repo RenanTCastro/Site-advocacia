@@ -24,10 +24,10 @@
         </div>
         <div class="text_header">
             <a href="#home" class="a_header_hide" id="nav_d_1">Home</a>
-            <a href="#sobre" class="a_header_hide" id="nav_d_2">Sobre</a>
-            <a href="#depoimentos" class="a_header_hide" id="nav_d_3">Depoimentos</a>
-            <a href="#area" class="a_header_hide header-right" id="nav_d_4">Áreas de atuação</a>
-            <button class="contato_header" onclick='location.href="#contato"'>
+            <a href="#sobre_mobile" class="a_header_hide" id="nav_d_2">Sobre</a>
+            <a href="#depoimentos_mobile" class="a_header_hide" id="nav_d_3">Depoimentos</a>
+            <a href="#area_mobile" class="a_header_hide header-right" id="nav_d_4">Áreas de atuação</a>
+            <button class="a_contato_hide" onclick='location.href="#contato"' id="nav_d_5">
               <a href="#contato" class="contato_texto_header">CONTATO</a>
             </button>
         </div>
@@ -61,7 +61,7 @@
                 <img src="assets/icon.png" alt="Senhora justiça jurídico lei" class="card__inicio_icon"/>
                 <p class="card_inicio_texto"> Profissional qualificado </p>
             </div>
-            <div class="card_inicio">
+            <div class="card_inicio" id="sobre_mobile">
                 <img src="assets/icon.png" alt="Senhora justiça jurídico lei" class="card__inicio_icon"/>
                 <p class="card_inicio_texto"> Garantia de satisfação </p>
             </div>
@@ -79,7 +79,7 @@
                 occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
                 id est laborum.
             </p>
-            <button class="botao_quem_somos" onclick='location.href="#contato"'>ENTRE EM CONTATO</button>
+            <button class="botao_quem_somos" onclick='location.href="#contato"' id="depoimentos_mobile">ENTRE EM CONTATO</button>
         </div>
         <img src="assets/advogado.jpg" alt="foto" class="imagem_quem_somos"/>
     </div>
@@ -234,7 +234,7 @@
                     aliqua.
                 </p>
             </div>
-            <div class="inputs_contato">
+            <div class="inputs_contato"  id="area_mobile">
                 <input type="text" placeholder="Nome" class="input_contato">
                 <input type="email" placeholder="Email" class="input_contato">
                 <input type="text" placeholder="Whatsapp" class="input_contato">

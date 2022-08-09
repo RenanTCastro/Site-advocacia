@@ -62,6 +62,7 @@ function menu(){
   let nav2 = document.getElementById('nav_d_2')
   let nav3 = document.getElementById('nav_d_3')
   let nav4 = document.getElementById('nav_d_4')
+  let nav5 = document.getElementById('nav_d_5')
   let icon = document.getElementById("img_id")
 
   if(isOpen){
@@ -75,6 +76,8 @@ function menu(){
     nav3.classList.add('a_header_mobile')
     nav4.classList.remove('a_header_hide')
     nav4.classList.add('a_header_mobile')
+    nav5.classList.remove('a_contato_hide')
+    nav5.classList.add('a_contato_mobile')
     icon.src = "assets/menu_icon_close.png";
   }else{
     header.classList.add('header')
@@ -87,6 +90,8 @@ function menu(){
     nav3.classList.remove('a_header_mobile') 
     nav4.classList.add('a_header_hide')
     nav4.classList.remove('a_header_mobile') 
+    nav5.classList.add('a_contato_hide')
+    nav5.classList.remove('a_contato_mobile') 
     icon.src = "assets/menu_icon.png";
   }
   console.log("ddd")

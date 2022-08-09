@@ -60,6 +60,9 @@ body{
 .icon_header{
     display: none;
 }
+.text_header{
+    display: none;
+}
 @media only screen and (max-width: 490px) {
    .header{
         height: 13.453vw;
@@ -83,10 +86,9 @@ body{
         left: 11.111vw;
    }
    .header-right{
-        margin-right: 0;
-        margin-bottom: 6.944vw;
+        margin: 0;
    }
-    .contato_header, .a_header{
+    .contato_header, .a_header, .a_header_hide, .a_contato_hide{
         display: none;
     }
    .icon_header{
@@ -104,6 +106,7 @@ body{
    .text_header{
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin-top: 11.111vw;
    }
    .mobile_closed{
@@ -112,9 +115,6 @@ body{
         justify-content: space-between;
         width:100%;
    }
-   .a_header_hide{
-        display: none;
-   }
    .a_header_mobile{
         float: left;
         color: white;
@@ -122,6 +122,21 @@ body{
         padding: 1.464vw;
         font-size: 4.444vw;
         text-decoration: none;
+   }
+   .a_contato_mobile{
+        background-color: #FFF;
+        border-radius: 4px;
+        height: 8.333vw;
+        margin-top: 3.333vw;
+        margin-bottom: 6.111vw;
+        width: 45vw;
+        text-align: center;
+        border: none;
+   }
+   .a_contato_mobile > a{
+        font-size: 4.444vw;
+        padding: 0.556vw;
+        line-height: 0%;
    }
 }
 /* Destaque inicio */
