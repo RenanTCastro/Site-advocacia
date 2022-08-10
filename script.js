@@ -96,3 +96,15 @@ function menu(){
   }
   console.log("ddd")
 }
+
+function sendMail() {
+  var link = "mailto:renancastrotut@gmail.com"
+           + "?cc=renancastrotut@gmail.com"
+           + "&subject=" + encodeURIComponent("Email de contato")
+           + "&body=" + "Nome: " + encodeURIComponent(document.getElementById('NOME').value)
+           + "%0DEmail: "+ encodeURIComponent(document.getElementById('EMAIL').value) 
+           + "%0DWhatsapp: " + encodeURIComponent(document.getElementById('WHATSAPP').value)
+           + "%0DMensagem: " + encodeURIComponent(document.getElementById('MENSAGEM').value)
+  ;
+  window.location.href = link;
+}
