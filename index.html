@@ -24,12 +24,12 @@
             </div>
         </div>
         <div class="text_header">
-            <a href="#home" class="a_header_hide" id="nav_d_1">Home</a>
-            <a href="#sobre_mobile" class="a_header_hide" id="nav_d_2">Sobre</a>
-            <a href="#depoimentos_mobile" class="a_header_hide" id="nav_d_3">Depoimentos</a>
-            <a href="#area_mobile" class="a_header_hide header-right" id="nav_d_4">Áreas de atuação</a>
-            <button class="a_contato_hide" onclick='location.href="#contato"' id="nav_d_5">
-              <a href="#contato_mobile" class="contato_texto_header">CONTATO</a>
+            <a href="#home" class="a_header_hide" id="nav_d_1" onclick="menu()">Home</a>
+            <a href="#sobre_mobile" class="a_header_hide" id="nav_d_2" onclick="menu()">Sobre</a>
+            <a href="#depoimentos_mobile" class="a_header_hide" id="nav_d_3" onclick="menu()">Depoimentos</a>
+            <a href="#area_mobile" class="a_header_hide header-right" id="nav_d_4" onclick="menu()">Áreas de atuação</a>
+            <button class="a_contato_hide" id="nav_d_5">
+              <a href="#contato_mobile" class="contato_texto_header" onclick="menu()">CONTATO</a>
             </button>
         </div>
 
@@ -62,24 +62,25 @@
                 <img src="assets/card_icon_2.svg" alt="Senhora justiça jurídico lei" class="card__inicio_icon"/>
                 <p class="card_inicio_texto"> Profissional qualificado </p>
             </div>
-            <div class="card_inicio" id="sobre_mobile">
+            <div class="card_inicio">
                 <img src="assets/card_icon_3.svg" alt="Senhora justiça jurídico lei" class="card__inicio_icon"/>
                 <p class="card_inicio_texto"> Garantia de satisfação </p>
             </div>
         </div>
         <div id="sobre"></div>
     </div>
-    <div class="container_quem_somos"> 
+    <div class="container_quem_somos" id="sobre_mobile"> 
         <div>
             <h2 class="texto_titulo_quem_somos">Quem somos?</h2>
             <p class="texto_paragrafo_quem_somos">Buscamos construir um distinto escritório para resolver os conflitos de nossos 
                 clientes com o mínimo desgaste emocional proporcionando o mais alto grau de profissionalismo e de prestação de 
                 serviço. Os casos judiciais e extrajudiciais são tratados de acordo com as necessidades específicas de cada cliente.
             </p>
-            <button class="botao_quem_somos" onclick='location.href="#contato"' id="depoimentos_mobile">ENTRE EM CONTATO</button>
+            <button class="botao_quem_somos" onclick='location.href="#contato"'>ENTRE EM CONTATO</button>
         </div>
         <img src="assets/advogado.jpg" alt="foto" class="imagem_quem_somos"/>
     </div>
+    <div id="depoimentos_mobile"></div>
     <div class="container_depoimentos" id="depoimentos">
         <div>
             <div class="div_depoimentos_organizar">
@@ -143,12 +144,11 @@
             <p class="texto_paragrafo_depoimentos">Veja alguns dos depoimentos de nossos clientes 
                 e saiba por que somos a referência no que fazemos.
             </p>
-            <div id="contato_mobile"></div>
         </div>
     </div>
     <div id="area"></div>
-    <div class="div_mobile_contato_atuacao">
-        <div class="container_atuacao">
+    <div class="div_mobile_contato_atuacao" id="contato_mobile">
+        <div class="container_atuacao" id="area_mobile">
             <div>
                 <h2 class="texto_titulo_atuacao">Áreas em que atuamos</h2>
                 <p class="texto_paragrafo_atuacao">Estamos preparados para atendê-lo em diversas áreas jurídicas. Proporcionado ao cliente todas as orientações 
@@ -228,7 +228,7 @@
                     lado ou entre em contato por meio do telefone (77) 9 9969-3199 ou (77) 9 9329-2847.
                 </p>
             </div>
-            <div class="inputs_contato"  id="area_mobile">
+            <div class="inputs_contato">
                 <input type="text" placeholder="Nome" class="input_contato">
                 <input type="email" placeholder="Email" class="input_contato">
                 <input type="text" placeholder="Whatsapp" class="input_contato">
