@@ -245,6 +245,7 @@ body{
     margin-bottom: 1.464vw;
 }
 .card_inicio_texto{
+    width: 60%;
     font-size: 1.464vw;
     text-align: center;
     color: #FFF;
