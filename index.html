@@ -228,13 +228,17 @@
                     lado ou entre em contato por meio do telefone (77) 9 9969-3199 ou (77) 9 9329-2847.
                 </p>
             </div>
-            <div class="inputs_contato">
-                <input type="text" placeholder="Nome" id="NOME" class="input_contato">
-                <input type="email" placeholder="Email" id="EMAIL" class="input_contato">
-                <input type="text" placeholder="Whatsapp" id="WHATSAPP" class="input_contato">
-                <textarea placeholder="Digite sua mensagem" id="MENSAGEM"class="textarea_contato"></textarea>
-                <button class="botao_contato" onclick="sendMail(); return false">ENVIAR</button>
-            </div>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <div class="inputs_contato">
+                    <input type="hidden" name="accessKey" value="eed2cd3d-531c-4450-8d3c-2099055cd7ce" autocomplete="off" required>
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
+                    <input type="text" name="name" placeholder="Nome" id="NOME" class="input_contato" autocomplete="off" required>
+                    <input type="email" name="email" placeholder="Email" id="EMAIL" class="input_contato" autocomplete="off" required>
+                    <input type="text" name="phone" placeholder="Whatsapp" id="WHATSAPP" class="input_contato" autocomplete="off" required>
+                    <textarea name="message" placeholder="Digite sua mensagem" id="MENSAGEM"class="textarea_contato" autocomplete="off" required></textarea>
+                    <button class="botao_contato" value="Submit">ENVIAR</button>
+                </div>
+            </form>
         </div>
     </div>
     <div class="container_maps">
